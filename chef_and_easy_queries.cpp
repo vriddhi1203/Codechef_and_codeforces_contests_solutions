@@ -18,7 +18,7 @@ int main() {
 	        }
             left=(arr[j]+left)-k;
 	    }
-            if(!flag){
+            if(flag<k){
             index=n+left/k+1;
         }
 	    cout<<index<<endl;
