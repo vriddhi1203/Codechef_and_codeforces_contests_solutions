@@ -4,14 +4,9 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--) {
-		long long unsigned int n;
-		cin>>n;
-		long long int count=0;
-		while(n!=0) {
-			n/=10;
-			++count;
-		}
-		cout<<count<<endl;
+		string str;
+		cin>>str;
+		cout<<str.length()<<endl;
 	}
 	return 0;
 }
