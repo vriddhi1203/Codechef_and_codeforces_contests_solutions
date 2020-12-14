@@ -4,15 +4,14 @@ int main(){
 	int t;
 	cin>>t;
 	while(t--){
-		int a,b,count=0;
+		long long int a,b,count=0;
 		cin>>a>>b;
-		for(int i=1;i<=a;i++){
-			for(int j=1;j<=b;j++){
-				if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)){
-					count++;
-				}
-			}
-		}
+		long long int e1,e2,o1,o2;
+		e1=a/2;
+		o1=a-e1;
+		e2=b/2;
+		o2=b-e2;
+		count=e1*e2+o1*o2;
 		cout<<count<<endl;
 	}
 	return 0;
