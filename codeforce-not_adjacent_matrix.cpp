@@ -1,12 +1,13 @@
-#include <bits/stdc++.h>  
+#include <iostream>  
 using namespace std;
 int main(){
 	int t;
 	cin>>t;
 	while(t--){
 		int n,k=1;
-		int arr[100000][100000];
-		cin>>n; 
+        cin>>n; 
+		int arr[n][n];
+		
         if(n==1)
         	cout<<"1"<<endl;
         else if(n==2)
@@ -34,11 +35,11 @@ int main(){
         }
             for(int i=0;i<n;i++){
         	    for(int j=0;j<n;j++){
-        		cout<<arr[i][j];
+        		cout<<arr[i][j]<<" ";
         	}
         	cout<<endl;
-        }
-        }
+             }
+          }
 	}
 	return 0;
 }
